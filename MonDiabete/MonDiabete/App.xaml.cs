@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Threading;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +13,10 @@ namespace MonDiabete
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+           // MainPage = new MainPage();
+            MainPage = new NavigationPage(new MonDiabete.MainPage());
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("fr-FR");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
         }
 
         protected override void OnStart()

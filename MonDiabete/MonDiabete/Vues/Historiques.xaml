@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+            x:Class="MonDiabete.Vues.Historiques">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Matin" >
+        <ScrollView Orientation="Both">
+            <StackLayout x:Name="StackMainMatin" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Button x:Name="bp_import_matin" Text="Importer toutes vos données Matin" Clicked="Bp_import_matin_Clicked"   HorizontalOptions="FillAndExpand"></Button>
+                <Button x:Name="bp_export_matin" Text="Export Matin" Clicked="Bp_export_matin_Clicked"   HorizontalOptions="FillAndExpand"></Button>
+                <Label Text="Graphique Glycémie" HorizontalOptions="CenterAndExpand"></Label>
+                <microcharts:ChartView x:Name="MatinGlycmieCharts" HeightRequest="200" BackgroundColor="White" HorizontalOptions="FillAndExpand" />
+                <Label Text="Graphique Insuline" HorizontalOptions="CenterAndExpand"></Label>
+                <microcharts:ChartView x:Name="MatinInsulineCharts" HeightRequest="140" BackgroundColor="White"  HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage>
+    <ContentPage Title="Midi" >
+        <ScrollView Orientation="Both">
+            <StackLayout x:Name="StackMainMidi" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Button x:Name="bp_import_midi" Text="Importer toutes vos données Midi" Clicked="Bp_import_midi_Clicked"  HorizontalOptions="FillAndExpand"></Button>
+                <Button x:Name="bp_export_midi" Text="Export Midi" Clicked="Bp_export_midi_Clicked"  HorizontalOptions="FillAndExpand"></Button>
+                <Label Text="Graphique Glycémie" HorizontalOptions="CenterAndExpand"></Label>
+                <microcharts:ChartView x:Name="MidiGlycmieCharts" HeightRequest="200" BackgroundColor="White" HorizontalOptions="FillAndExpand" />
+                <Label Text="Graphique Insuline" HorizontalOptions="CenterAndExpand"></Label>
+                <microcharts:ChartView x:Name="MidiInsulineCharts" HeightRequest="140" BackgroundColor="White"  HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+
+    <ContentPage Title="Soir" >
+        <ScrollView Orientation="Both">
+            <StackLayout x:Name="StackMainSoir" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Button x:Name="bp_import_soir" Text="Importer toutes vos données Soir" Clicked="Bp_import_soir_Clicked"  HorizontalOptions="FillAndExpand"></Button>
+                <Button x:Name="bp_export_soir" Text="Export Soir" Clicked="Bp_export_soir_Clicked" HorizontalOptions="FillAndExpand"></Button>
+                <Label Text="Graphique Glycémie" HorizontalOptions="CenterAndExpand"></Label>
+                <microcharts:ChartView x:Name="SoirGlycmieCharts" HeightRequest="200" BackgroundColor="White" HorizontalOptions="FillAndExpand" />
+                <Label Text="Graphique Insuline" HorizontalOptions="CenterAndExpand"></Label>
+                <microcharts:ChartView x:Name="SoirInsulineCharts" HeightRequest="140" BackgroundColor="White"  HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+</TabbedPage>

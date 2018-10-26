@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MonDiabete.Vues.ConfigurationPage">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+            <StackLayout Spacing="20" x:Name="BaseStack">
+                <StackLayout>
+                    <Label Text="Infos Utilisateur" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" FontAttributes="Bold" />
+
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="Prénom" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                        <Entry Text="" x:Name="prenom" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="Nom" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                        <Entry Text="" x:Name="nom" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="E-mail" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                        <Entry Text="" x:Name="mail" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="Gsm" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                        <Entry Text="" x:Name="gsm" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="Date de naissance" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                        <DatePicker x:Name = "dateNaissance" HorizontalOptions="CenterAndExpand" Margin = "0,1" Format="dd/MM/yyyy"  />
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label />
+                    <BoxView HeightRequest="1" BackgroundColor="Green" HorizontalOptions="FillAndExpand" />
+                    <Label />
+                </StackLayout>
+
+                <StackLayout>
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="Personne de contact" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                        <Label Text="Nom de la personne de contact" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                        <Entry Text="" x:Name="nomContact" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                        <Label Text="Prénom de la personne de contact"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                        <Entry Text="" x:Name="prenomContact" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                        <Label Text="N° Gsm de la personne de contact" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                        <Entry Text="" x:Name="gsmContact" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                        <Label Text="E-mail de la personne de contact"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                        <Entry Text="" x:Name="mailContact" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label />
+                    <BoxView HeightRequest="1" BackgroundColor="Green" HorizontalOptions="FillAndExpand" />
+                    <Label />
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Horaire" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="Heure du déjeuner" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                        <TimePicker x:Name = "heureMatin" Margin = "0,1"  HorizontalOptions="CenterAndExpand"  />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="Heure du midi"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                        <TimePicker x:Name = "heureMidi" Margin = "0,1" HorizontalOptions="CenterAndExpand" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="Heure du soir" HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Center" ></Label>
+                        <TimePicker x:Name = "heureSoir" Margin = "0,1" HorizontalOptions="CenterAndExpand"  />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="APIKEY" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                        <Entry Text="" x:Name="apikey" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" IsEnabled="False" FontSize="Small"></Entry>
+                    </StackLayout>
+
+                    <Button Text="Enregistrer" x:Name="bp_record" Clicked="Bp_record_ClickedAsync"  HorizontalOptions="FillAndExpand"  ></Button>
+                    <Button Text="Supprimer Utilisateur" x:Name="bp_delete" Clicked="Bp_delete_ClickedAsync"    HorizontalOptions="FillAndExpand" BackgroundColor="Red" ></Button>
+                </StackLayout>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

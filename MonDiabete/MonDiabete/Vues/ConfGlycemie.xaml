@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MonDiabete.Vues.ConfGlycemie">
+    <ContentPage.Content>
+        <ScrollView  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+            <StackLayout Spacing="20" x:Name="RootStaskGlycemie">
+                <Label TextColor="BurlyWood" Text="Configuration Glycémie - Unités Insuline" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="20*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Label TextColor="BlueViolet" Grid.Row="0" Grid.Column="0" Text="Glycémie" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                    <Label TextColor="BlueViolet" Grid.Row="0" Grid.Column="1" Text="Matin" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                    <Label TextColor="BlueViolet" Grid.Row="0" Grid.Column="2" Text="Midi" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                    <Label TextColor="BlueViolet" Grid.Row="0" Grid.Column="3" Text="Soir" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+
+                    <Label TextColor="Green" Grid.Row="1" Grid.Column="0" Text="&lt; 70" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                    <Entry Grid.Row="1" Grid.Column="1" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g70matin" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    <Entry Grid.Row="1" Grid.Column="2" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g70midi" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    <Entry Grid.Row="1" Grid.Column="3" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g70soir" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+
+
+                    <Label TextColor="Green" Grid.Row="2" Grid.Column="0" Text="70 - 100" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                    <Entry Grid.Row="2" Grid.Column="1" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g70A100matin" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    <Entry Grid.Row="2" Grid.Column="2" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g70A100midi" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    <Entry Grid.Row="2" Grid.Column="3" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g70A100soir" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+
+                    <Label TextColor="Green" Grid.Row="3" Grid.Column="0" Text="101 - 150" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                    <Entry Grid.Row="3" Grid.Column="1" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g101A150matin" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    <Entry Grid.Row="3" Grid.Column="2" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g101A150midi" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    <Entry Grid.Row="3" Grid.Column="3" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g101A150soir" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+
+                    <Label TextColor="Green" Grid.Row="4" Grid.Column="0" Text="151 - 200" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                    <Entry Grid.Row="4" Grid.Column="1" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g151A200matin" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    <Entry Grid.Row="4" Grid.Column="2" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g151A200midi" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    <Entry Grid.Row="4" Grid.Column="3" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g151A200soir" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+
+                    <Label TextColor="Green" Grid.Row="5" Grid.Column="0" Text="201 - 250" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                    <Entry Grid.Row="5" Grid.Column="1" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g201A250matin" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    <Entry Grid.Row="5" Grid.Column="2" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g201A250midi" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    <Entry Grid.Row="5" Grid.Column="3" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g201A250soir" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+
+                    <Label TextColor="Green" Grid.Row="6" Grid.Column="0" Text="251 - 300" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                    <Entry Grid.Row="6" Grid.Column="1" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g251A300matin" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    <Entry Grid.Row="6" Grid.Column="2" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g251A300midi" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    <Entry Grid.Row="6" Grid.Column="3" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g251A300soir" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+
+                    <Label TextColor="Green" Grid.Row="7" Grid.Column="0" Text="&gt; 300" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Label>
+                    <Entry Grid.Row="7" Grid.Column="1" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g300matin" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    <Entry Grid.Row="7" Grid.Column="2" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g300midi" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+                    <Entry Grid.Row="7" Grid.Column="3" Placeholder="Unités" PlaceholderColor="LightGray" Text="" x:Name="g300soir" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ></Entry>
+
+                </Grid>
+
+                <Button Text="Enregistrer" x:Name="bp_record_glycemie" Clicked="Bp_record_glycemie_ClickedAsync"    HorizontalOptions="FillAndExpand"  ></Button>
+                <Button Text="Supprimer Infos" x:Name="bp_delete_glycemie" Clicked="Bp_delete_glycemie_ClickedAsync"    HorizontalOptions="FillAndExpand" BackgroundColor="Red" ></Button>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

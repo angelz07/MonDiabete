@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MonDiabete.Vues.GeneralUI">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+            <StackLayout Spacing="20" x:Name="BaseStack">
+                <Label x:Name="LabelInfos" Text="Label Infos" HorizontalOptions="FillAndExpand" FontAttributes="Bold" VerticalOptions="StartAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Azure" TextColor="Red" FontSize="Large"></Label>
+                <Frame BorderColor="BlueViolet" Margin="0, 10, 0, 10" HasShadow="True" Padding="5" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+                    <Label x:Name="LabelHorloge" Text="Label Horloge" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Azure" TextColor="Blue" FontSize="Large"></Label>
+                </Frame>
+                <Label x:Name="LabelBienvenu" Text="Label Bienvenue" HorizontalOptions="FillAndExpand" FontAttributes="Bold" VerticalOptions="StartAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Azure" TextColor="DarkSlateBlue" FontSize="Large"></Label>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

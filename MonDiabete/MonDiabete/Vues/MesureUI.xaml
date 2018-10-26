@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MonDiabete.Vues.MesureUI">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+            <StackLayout Spacing="20" x:Name="BaseStack">
+                <Label x:Name="LabelAlert" Text="" HorizontalOptions="FillAndExpand" FontAttributes="Bold" VerticalOptions="StartAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Azure" TextColor="Red" FontSize="Large"></Label>
+                <Frame BorderColor="BlueViolet" Margin="0, 10, 0, 10" HasShadow="True" Padding="5" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+                    <Label x:Name="HorlogeLabel" 
+                           Text="" 
+                           HorizontalOptions="CenterAndExpand" 
+                           FontAttributes="Bold" 
+                           VerticalOptions="CenterAndExpand" 
+                           HorizontalTextAlignment="Center" 
+                           BackgroundColor="Azure" 
+                           TextColor="Blue" 
+                           FontSize="Large">
+                    </Label>
+                </Frame>
+                <Label x:Name="BienvenuLabel" 
+                       Text="" 
+                       HorizontalOptions="FillAndExpand" 
+                       FontAttributes="Bold" 
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalTextAlignment="Center" 
+                       BackgroundColor="Azure" 
+                       TextColor="DarkSlateBlue" 
+                       FontSize="Large">
+                </Label>
+               
+                <Label 
+                       Text="Glycémie" 
+                       HorizontalOptions="FillAndExpand" 
+                       FontAttributes="Bold" 
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalTextAlignment="Center" 
+                       BackgroundColor="Azure" 
+                       TextColor="DarkSlateBlue" 
+                       FontSize="Large">
+                </Label>
+
+                <Entry x:Name="GlycemieEntry" 
+                       Text="" 
+                       HorizontalOptions="FillAndExpand" 
+                       FontAttributes="None" 
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalTextAlignment="Center" 
+                       FontSize="Large"
+                       Unfocused="GlycemieEntry_Unfocused"  
+                       Focused="GlycemieEntry_Focused" 
+                       Keyboard="Numeric">
+                </Entry>
+
+                <Label x:Name="InsulineLabel" 
+                       Text="" 
+                       HorizontalOptions="FillAndExpand" 
+                       FontAttributes="Bold" 
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalTextAlignment="Center" 
+                       BackgroundColor="Azure" 
+                       TextColor="DarkSlateBlue" 
+                       FontSize="Large">
+
+                </Label>
+
+                <StackLayout Margin="20">
+                    <Label Text="Picure Faites ?" 
+                           FontAttributes="Bold" 
+                           HorizontalOptions="Center" />
+                    <Switch  x:Name="ValidateSwitch" 
+                             Toggled="Switch_Toggled" 
+                             HorizontalOptions="FillAndExpand" 
+                             VerticalOptions="CenterAndExpand" 
+                             BackgroundColor="Azure"
+                       />
+                    
+                </StackLayout>
+                <Button x:Name="BouttonSave"
+                        HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="CenterAndExpand"  
+                        Text="Valider"
+                        Clicked="BouttonSave_Clicked"   
+                        
+                    />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

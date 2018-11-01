@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Mon Diabete</AssemblyName>
+    <ApplicationIcon>diabete.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <Authors>Telecom4all</Authors>
+    <Company>Telecom4all</Company>
+    <Copyright>@2019</Copyright>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>telecom4all.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

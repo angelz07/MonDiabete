@@ -72,7 +72,7 @@ namespace MonDiabete.Class
 
 
                     VariablesGlobal.MessageNotification = "C'est l'heure de mesurer votre glycémie et de prendre vos médicaments pour le repas " + VariablesGlobal.HeureProchaineMesureMessage; 
-                    Notifications.Sendnotification("mesure");
+                    Notifications.Sendnotification("mesure", "C'est l'heure de mesurer votre glycémie et de prendre vos médicaments pour le repas " + VariablesGlobal.HeureProchaineMesureMessage);
                     
                     // GO TO MESURE UI
                     Navigation.PushAsync(new MesureUI());
@@ -274,13 +274,13 @@ namespace MonDiabete.Class
                 {
                     if (VueNotification == "general")
                     {
-                        Notifications.Sendnotification(VueNotification);
+                        Notifications.Sendnotification(VueNotification, VariablesGlobal.MessageAlertGeneralUI);
                         // GO TO General UI
                         Navigation.PushAsync(new GeneralUI());
                         // MainPageLocal.UIBase("rater", "Vous avez raté la prise de mesure et de médicament pour " + PrefsApp.NomHeure + ". Attention !!!");
                     }
                     else {
-                        Notifications.Sendnotification(VueNotification );
+                        Notifications.Sendnotification(VueNotification, VariablesGlobal.MessageAlertMesureUI);
                     }
                     
                 }
